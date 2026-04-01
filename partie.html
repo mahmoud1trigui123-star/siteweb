@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Gestion des Gardiens | 7 Sites modifiables | Suivi mensuel Jour/Nuit</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+        }
+
+        body {
+            background: #eef2fa;
+            padding: 1.5rem;
+        }
+
+        .app-container {
+            max-width: 1600px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #0a2b4e, #0f3b6f);
+            border-radius: 1.5rem 1.5rem 0 0;
+            padding: 1.5rem 2rem;
+            color: white;
+        }
+
+        .header h1 {
+            font-size: 1.8rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .header p {
+            opacity: 0.9;
+            margin-top: 0.5rem;
+        }
+
+        /* Toolbar */
+        .toolbar {
+            background: white;
+            padding: 1rem 2rem;
+            border-bottom: 1px solid #e2edff;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 0.8rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            border: none;
+            padding: 0.6rem 1.2rem;
+            border-radius: 40px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .btn-primary {
+            background: #0f3b6f;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #1c4e8c;
+            transform: translateY(-1px);
+        }
+
+        .btn-success {
+            background: #1f6e2f;
+            color: white;
+        }
+
+        .btn-success:hover {
+            background: #2a8640;
+        }
+
+        .btn-outline {
+            background: white;
+            border: 1px solid #0f3b6f;
+            color: #0f3b6f;
+        }
+
+        .btn-outline:hover {
+            background: #eef4ff;
+        }
+
+        .btn-warning {
+            background: #e67e22;
+            color: white;
+        }
+
+        .btn-info {
+            background: #3498db;
+            color: white;
+        }
+
+        .month-selector {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            background: #eef3ff;
+            padding: 0.3rem 1rem;
+            border-radius: 40px;
+        }
+
+        .month-selector select {
+            padding: 0.4rem 0.8rem;
+            border-radius: 30px;
+            border: 1px solid #c7dcff;
+            background: white;
+            font-weight: 500;
+        }
+
+        .stats-info {
+            background: #eef3ff;
+            padding: 0.5rem 1rem;
+            border-radius: 40px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: #0f3b6f;
+        }
+
+        /* Onglets */
+        .tabs {
+            display: flex;
+            gap: 0.5rem;
+            background: white;
+            padding: 0.8rem 2rem 0 2rem;
+            border-bottom: 1px solid #e2edff;
+        }
+
+        .tab-btn {
+            padding: 0.7rem 1.5rem;
+            background: none;
+            border: none;
+            font-weight: 600;
+            cursor: pointer;
+            border-radius: 30px 30px 0 0;
+            transition: all 0.2s;
+            color: #5a7c9e;
+        }
+
+        .tab-btn.active {
+            background: white;
+            color: #0f3b6f;
+            border-bottom: 3px solid #0f3b6f;
+        }
+
+        .tab-content {
+            display: none;
+            background: white;
+            padding: 1.5rem;
+            border-radius: 0 0 1.5rem 1.5rem;
+            overflow-x: auto;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        /* Tableaux */
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.8rem;
+            min-width: 800px;
+        }
+
+        .data-table th {
+            background: #f8fbfe;
+            padding: 0.8rem 0.5rem;
+            text-align: center;
+            border: 1px solid #dceaff;
+            color: #1f4e7a;
+            font-weight: 700;
+            position: sticky;
+            top: 0;
+        }
+
+        .data-table td {
+            padding: 0.6rem 0.4rem;
+            text-align: center;
+            border: 1px solid #ecf3fc;
+            vertical-align: middle;
+        }
+
+        .site-col {
+            background: #f0f7ff;
+            font-weight: 600;
+        }
+
+        .poste-jour {
+            background: #fffbf0;
+        }
+
+        .poste-nuit {
+            background: #f0f5fd;
+        }
+
+        .gardien-select {
+            width: 100%;
+            padding: 0.4rem;
+            font-size: 0.7rem;
+            border: 1px solid #c7dcff;
+            border-radius: 20px;
+            background: white;
+            cursor: pointer;
+        }
+
+        .edit-icon {
+            cursor: pointer;
+            background: none;
+            border: none;
+            font-size: 1rem;
+            padding: 0.2rem 0.5rem;
+            border-radius: 20px;
+        }
+
+        .edit-icon:hover {
+            background: #eef2fa;
+        }
+
+        .site-name {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 0.3rem;
+        }
+
+        .badge-jour {
+            background: #fff3e0;
+            padding: 0.2rem 0.6rem;
+            border-radius: 20px;
+            font-size: 0.7rem;
+        }
+
+        .badge-nuit {
+            background: #e3f0ff;
+            padding: 0.2rem 0.6rem;
+            border-radius: 20px;
+            font-size: 0.7rem;
+        }
+
+        .footer {
+            background: #fafdff;
+            padding: 0.8rem 2rem;
+            border-top: 1px solid #d9e6ff;
+            font-size: 0.75rem;
+            color: #3b6e9e;
+            text-align: center;
+            margin-top: 1rem;
+            border-radius: 1rem;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .modal-content {
+            background: white;
+            border-radius: 1.5rem;
+            padding: 1.8rem;
+            width: 90%;
+            max-width: 450px;
+        }
+
+        .modal-content h3 {
+            margin-bottom: 1rem;
+            color: #0f3b6f;
+        }
+
+        .modal-content input {
+            width: 100%;
+            padding: 0.7rem;
+            margin: 0.5rem 0;
+            border: 1px solid #c7dcff;
+            border-radius: 40px;
+        }
+
+        .modal-buttons {
+            display: flex;
+            gap: 0.5rem;
+            margin-top: 1rem;
+            justify-content: flex-end;
+        }
+
+        .stat-value {
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+
+        .quota-ok {
+            color: #1f6e2f;
+            font-weight: 700;
+        }
+
+        .progress-bar {
+            width: 80px;
+            height: 6px;
+            background: #e0e7f0;
+            border-radius: 10px;
+            overflow: hidden;
+            display: inline-block;
+            margin-left: 5px;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: #0f3b6f;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="app-container">
+    <div class="header">
+        <h1>Gestion des Gardiens | 7 Sites modifiables</h1>
+        <p>Affichage par mois · Suivi Jour/Nuit · Nombre de jours travaillés par personne</p>
+    </div>
+    <div class="toolbar">
+        <div class="btn-group">
+            <button id="exportExcelBtn" class="btn btn-success">📊 Exporter Excel</button>
+            <button id="resetDataBtn" class="btn btn-outline">🔄 Réinitialiser</button>
+        </div>
+        <div class="month-selector">
+            <span>📅 Mois :</span>
+            <select id="monthSelect">
+                <option value="0">Janvier</option>
+                <option value="1">Février</option>
+                <option value="2">Mars</option>
+                <option value="3">Avril</option>
+                <option value="4">Mai</option>
+                <option value="5">Juin</option>
+                <option value="6">Juillet</option>
+                <option value="7">Août</option>
+                <option value="8">Septembre</option>
+                <option value="9">Octobre</option>
+                <option value="10">Novembre</option>
+                <option value="11">Décembre</option>
+            </select>
+            <span id="yearDisplay">2025</span>
+        </div>
+        <div class="stats-info">
+            👤 <span id="personCount">0</span> gardiens | 🏢 7 sites
+        </div>
+    </div>
+
+    <div class="tabs">
+        <button class="tab-btn active" data-tab="planning">📋 Planning Jour/Nuit</button>
+        <button class="tab-btn" data-tab="stats">📊 Statistiques mensuelles</button>
+        <button class="tab-btn" data-tab="sites">🏢 Gérer les sites</button>
+        <button class="tab-btn" data-tab="persons">👥 Gérer les gardiens</button>
+    </div>
+
+    <!-- Onglet Planning -->
+    <div id="tab-planning" class="tab-content active">
+        <div style="overflow-x: auto;">
+            <table class="data-table" id="planningTable">
+                <thead id="tableHeader">
+                    <tr>
+                        <th style="width:180px">🏢 Site de travail</th>
+                        <th style="width:280px">🌞 Poste JOUR</th>
+                        <th style="width:280px">🌙 Poste NUIT</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody"></tbody>
+            </table>
+        </div>
+        <div style="margin-top: 1rem; padding: 0.8rem; background: #f8fbfe; border-radius: 1rem; font-size: 0.75rem;">
+            💡 Cliquez sur un menu déroulant pour assigner un gardien · Les jours travaillés sont comptabilisés automatiquement
+        </div>
+    </div>
+
+    <!-- Onglet Statistiques mensuelles -->
+    <div id="tab-stats" class="tab-content">
+        <h3 style="margin-bottom: 1rem;">📊 Nombre de jours travaillés par gardien (cumul Jour + Nuit)</h3>
+        <div style="overflow-x: auto;">
+            <table class="data-table" id="statsTable">
+                <thead>
+                    <tr>
+                        <th>Gardien</th>
+                        <th>🌞 Poste JOUR</th>
+                        <th>🌙 Poste NUIT</th>
+                        <th>📆 Total jours</th>
+                        <th>📈 Progression</th>
+                    </tr>
+                </thead>
+                <tbody id="statsTbody"></tbody>
+            </table>
+        </div>
+        <div style="margin-top: 1rem; padding: 0.8rem; background: #e8f0fe; border-radius: 1rem;">
+            <strong>📌 Légende :</strong> Chaque gardien cumule ses affectations sur les 7 sites pour le mois sélectionné.
+            Total maximum possible = 7 sites × 31 jours max = 217 jours par poste (théorique).
+        </div>
+    </div>
+
+    <!-- Onglet Gérer les sites -->
+    <div id="tab-sites" class="tab-content">
+        <h3 style="margin-bottom: 1rem;">🏢 Modifier les noms des sites de travail</h3>
+        <div id="sitesListContainer"></div>
+        <button id="addSiteBtn" class="btn btn-primary" style="margin-top: 1rem;">➕ Ajouter un site</button>
+    </div>
+
+    <!-- Onglet Gérer les gardiens -->
+    <div id="tab-persons" class="tab-content">
+        <h3 style="margin-bottom: 1rem;">👥 Gestion des gardiens (Nom / Prénom)</h3>
+        <div id="personsListContainer"></div>
+        <div style="display: flex; gap: 0.5rem; margin-top: 1rem; flex-wrap: wrap;">
+            <input type="text" id="newFirstName" placeholder="Prénom" style="flex:1; padding:0.6rem; border-radius:40px; border:1px solid #c7dcff;">
+            <input type="text" id="newLastName" placeholder="Nom" style="flex:1; padding:0.6rem; border-radius:40px; border:1px solid #c7dcff;">
+            <button id="addPersonBtn" class="btn btn-primary">➕ Ajouter gardien</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        © Gestion 7 sites modifiables · Suivi mensuel Jour/Nuit · Export Excel inclus
+    </div>
+</div>
+
+<script>
+    // ---------- DONNÉES ----------
+    let sites = [
+        "🏢 Site A - Accueil Principal",
+        "🏭 Site B - Entrepôt Logistique",
+        "📋 Site C - Administration",
+        "🚗 Site D - Parking Sécurisé",
+        "🔧 Site E - Technique & Maintenance",
+        "📦 Site F - Zone de Stockage",
+        "🛡️ Site G - Centre de Sécurité"
+    ];
+
+    let guardians = [
+        { id: "g1", firstName: "Jean", lastName: "Martin" },
+        { id: "g2", firstName: "Marie", lastName: "Bernard" },
+        { id: "g3", firstName: "Pierre", lastName: "Dubois" },
+        { id: "g4", firstName: "Sophie", lastName: "Thomas" },
+        { id: "g5", firstName: "Lucas", lastName: "Robert" },
+        { id: "g6", firstName: "Emma", lastName: "Richard" },
+        { id: "g7", firstName: "Thomas", lastName: "Petit" },
+        { id: "g8", firstName: "Julie", lastName: "Durand" },
+        { id: "g9", firstName: "Nicolas", lastName: "Leroy" },
+        { id: "g10", firstName: "Camille", lastName: "Moreau" },
+        { id: "g11", firstName: "Alexandre", lastName: "Simon" },
+        { id: "g12", firstName: "Laura", lastName: "Laurent" },
+        { id: "g13", firstName: "David", lastName: "Michel" },
+        { id: "g14", firstName: "Sarah", lastName: "Garcia" },
+        { id: "g15", firstName: "Kevin", lastName: "David" },
+        { id: "g16", firstName: "Amandine", lastName: "Bertrand" },
+        { id: "g17", firstName: "Julien", lastName: "Roux" },
+        { id: "g18", firstName: "Marine", lastName: "Vincent" },
+        { id: "g19", firstName: "Antoine", lastName: "Fournier" },
+        { id: "g20", firstName: "Claire", lastName: "Morel" },
+        { id: "g21", firstName: "Romain", lastName: "Girard" },
+        { id: "g22", firstName: "Élodie", lastName: "Andre" },
+        { id: "g23", firstName: "Vincent", lastName: "Mercier" }
+    ];
+
+    // Planning: pour chaque mois, pour chaque site, jour et nuit (stockage par mois)
+    let planningData = {};
+
+    function getCurrentMonth() {
+        return parseInt(document.getElementById('monthSelect').value);
+    }
+
+    function getCurrentYear() {
+        return parseInt(document.getElementById('yearDisplay').innerText);
+    }
+
+    function getMonthKey(month, year) {
+        return `${year}_${month}`;
+    }
+
+    function initPlanningForMonth(month, year) {
+        const key = getMonthKey(month, year);
+        if (!planningData[key]) {
+            planningData[key] = {};
+            for (let i = 0; i < sites.length; i++) {
+                planningData[key][i] = { jour: null, nuit: null };
+            }
+            // Assignations par défaut
+            if (guardians.length > 0) {
+                let idx = 0;
+                for (let i = 0; i < sites.length; i++) {
+                    if (idx < guardians.length) planningData[key][i].jour = guardians[idx].id;
+                    idx++;
+                    if (idx < guardians.length) planningData[key][i].nuit = guardians[idx].id;
+                    idx++;
+                }
+                for (let i = 0; i < sites.length; i++) {
+                    if (!planningData[key][i].jour && guardians.length) planningData[key][i].jour = guardians[0].id;
+                    if (!planningData[key][i].nuit && guardians.length) planningData[key][i].nuit = guardians[0].id;
+                }
+            }
+        }
+        return planningData[key];
+    }
+
+    function getCurrentPlanning() {
+        const month = getCurrentMonth();
+        const year = getCurrentYear();
+        return initPlanningForMonth(month, year);
+    }
+
+    // Calculer les jours travaillés par gardien pour le mois sélectionné
+    function calculateMonthlyStats() {
+        const planning = getCurrentPlanning();
+        const stats = {};
+        const daysInMonth = new Date(getCurrentYear(), getCurrentMonth() + 1, 0).getDate();
+        
+        guardians.forEach(g => {
+            stats[g.id] = { jour: 0, nuit: 0, total: 0 };
+        });
+        
+        for (let i = 0; i < sites.length; i++) {
+            const sitePlanning = planning[i];
+            if (sitePlanning && sitePlanning.jour && stats[sitePlanning.jour]) stats[sitePlanning.jour].jour++;
+            if (sitePlanning && sitePlanning.nuit && stats[sitePlanning.nuit]) stats[sitePlanning.nuit].nuit++;
+        }
+        
+        for (let id in stats) {
+            stats[id].jour = stats[id].jour * daysInMonth;
+            stats[id].nuit = stats[id].nuit * daysInMonth;
+            stats[id].total = stats[id].jour + stats[id].nuit;
+        }
+        return stats;
+    }
+
+    // Rendu du planning (onglet 1)
+    function renderPlanning() {
+        const tbody = document.getElementById('tableBody');
+        if (!tbody) return;
+        const planning = getCurrentPlanning();
+        const stats = calculateMonthlyStats();
+        tbody.innerHTML = '';
+        for (let i = 0; i < sites.length; i++) {
+            const site = sites[i];
+            const jourId = planning[i]?.jour || null;
+            const nuitId = planning[i]?.nuit || null;
+            const jourGuard = guardians.find(g => g.id === jourId);
+            const nuitGuard = guardians.find(g => g.id === nuitId);
+            const row = tbody.insertRow();
+            row.insertCell(0).innerHTML = `<div class="site-name"><strong>${escapeHtml(site)}</strong></div>`;
+            const cellJour = row.insertCell(1);
+            cellJour.className = 'poste-jour';
+            cellJour.appendChild(createGuardianSelect(jourId, stats, (newId) => {
+                planning[i].jour = newId;
+                saveToLocalStorage();
+                renderPlanning();
+                renderStats();
+            }));
+            const cellNuit = row.insertCell(2);
+            cellNuit.className = 'poste-nuit';
+            cellNuit.appendChild(createGuardianSelect(nuitId, stats, (newId) => {
+                planning[i].nuit = newId;
+                saveToLocalStorage();
+                renderPlanning();
+                renderStats();
+            }));
+        }
+        document.getElementById('personCount').innerText = guardians.length;
+    }
+
+    function createGuardianSelect(selectedId, stats, onChangeCallback) {
+        const select = document.createElement('select');
+        select.className = 'gardien-select';
+        const optionVide = document.createElement('option');
+        optionVide.value = '';
+        optionVide.textContent = '-- Non assigné --';
+        select.appendChild(optionVide);
+        guardians.forEach(guard => {
+            const option = document.createElement('option');
+            option.value = guard.id;
+            const nbJours = stats[guard.id] ? stats[guard.id].total : 0;
+            option.textContent = `${guard.firstName} ${guard.lastName} (${nbJours} jrs)`;
+            if (selectedId === guard.id) option.selected = true;
+            select.appendChild(option);
+        });
+        select.addEventListener('change', (e) => {
+            if (onChangeCallback) onChangeCallback(e.target.value);
+        });
+        return select;
+    }
+
+    // Rendu des statistiques mensuelles
+    function renderStats() {
+        const tbody = document.getElementById('statsTbody');
+        if (!tbody) return;
+        const stats = calculateMonthlyStats();
+        const monthNames = ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre'];
+        const month = getCurrentMonth();
+        document.querySelector('#tab-stats h3').innerHTML = `📊 Nombre de jours travaillés par gardien - ${monthNames[month]} ${getCurrentYear()} (cumul Jour + Nuit sur ${sites.length} sites)`;
+        tbody.innerHTML = '';
+        guardians.forEach(guard => {
+            const stat = stats[guard.id] || { jour: 0, nuit: 0, total: 0 };
+            const daysInMonth = new Date(getCurrentYear(), getCurrentMonth() + 1, 0).getDate();
+            const maxPossible = sites.length * daysInMonth;
+            const percent = (stat.total / maxPossible) * 100;
+            const row = tbody.insertRow();
+            row.insertCell(0).innerHTML = `<strong>${escapeHtml(guard.firstName)} ${escapeHtml(guard.lastName)}</strong>`;
+            row.insertCell(1).innerHTML = `<span class="badge-jour">🌞 ${stat.jour} jours</span>`;
+            row.insertCell(2).innerHTML = `<span class="badge-nuit">🌙 ${stat.nuit} jours</span>`;
+            row.insertCell(3).innerHTML = `<span class="stat-value">${stat.total}</span> / ${maxPossible}`;
+            row.insertCell(4).innerHTML = `
+                <div style="display:flex; align-items:center; gap:5px;">
+                    <span>${Math.round(percent)}%</span>
+                    <div class="progress-bar"><div class="progress-fill" style="width: ${percent}%;"></div></div>
+                </div>
+            `;
+        });
+    }
+
+    // Rendu de la liste des sites modifiables
+    function renderSitesList() {
+        const container = document.getElementById('sitesListContainer');
+        if (!container) return;
+        container.innerHTML = '';
+        sites.forEach((site, index) => {
+            const div = document.createElement('div');
+            div.style.display = 'flex';
+            div.style.alignItems = 'center';
+            div.style.gap = '0.5rem';
+            div.style.padding = '0.8rem';
+            div.style.borderBottom = '1px solid #ecf3fc';
+            div.innerHTML = `
+                <span style="flex:1; font-weight:500;">${escapeHtml(site)}</span>
+                <button class="btn btn-outline edit-site" data-index="${index}" style="padding:0.3rem 1rem;">✏️ Modifier</button>
+                <button class="btn btn-outline delete-site" data-index="${index}" style="padding:0.3rem 1rem; background:#ffe0e0;">🗑️ Supprimer</button>
+            `;
+            container.appendChild(div);
+        });
+        document.querySelectorAll('.edit-site').forEach(btn => {
+            btn.addEventListener('click', () => editSite(parseInt(btn.getAttribute('data-index'))));
+        });
+        document.querySelectorAll('.delete-site').forEach(btn => {
+            btn.addEventListener('click', () => deleteSite(parseInt(btn.getAttribute('data-index'))));
+        });
+    }
+
+    function editSite(index) {
+        const newName = prompt("Modifier le nom du site:", sites[index]);
+        if (newName && newName.trim()) {
+            sites[index] = newName.trim();
+            saveToLocalStorage();
+            renderSitesList();
+            renderPlanning();
+            renderStats();
+        }
+    }
+
+    function deleteSite(index) {
+        if (sites.length <= 1) {
+            alert("Il doit rester au moins 1 site !");
+            return;
+        }
+        if (confirm(`Supprimer le site "${sites[index]}" ?`)) {
+            sites.splice(index, 1);
+            // Reorganiser le planning pour tous les mois
+            for (let key in planningData) {
+                const newPlanning = {};
+                for (let i = 0; i < sites.length; i++) {
+                    newPlanning[i] = { jour: null, nuit: null };
+                }
+                let oldIdx = 0;
+                for (let newIdx = 0; newIdx < sites.length; newIdx++) {
+                    if (oldIdx === index) oldIdx++;
+                    if (planningData[key][oldIdx]) {
+                        newPlanning[newIdx] = planningData[key][oldIdx];
+                    }
+                    oldIdx++;
+                }
+                planningData[key] = newPlanning;
+            }
+            saveToLocalStorage();
+            renderSitesList();
+            renderPlanning();
+            renderStats();
+        }
+    }
+
+    function addSite() {
+        const newName = prompt("Nom du nouveau site:", "🏢 Nouveau site");
+        if (newName && newName.trim()) {
+            sites.push(newName.trim());
+            // Ajouter dans le planning pour tous les mois
+            for (let key in planningData) {
+                planningData[key][sites.length - 1] = { jour: null, nuit: null };
+                if (guardians.length > 0) {
+                    planningData[key][sites.length - 1].jour = guardians[0].id;
+                    planningData[key][sites.length - 1].nuit = guardians[0].id;
+                }
+            }
+            saveToLocalStorage();
+            renderSitesList();
+            renderPlanning();
+            renderStats();
+        }
+    }
+
+    // Rendu de la liste des gardiens modifiables
+    function renderPersonsList() {
+        const container = document.getElementById('personsListContainer');
+        if (!container) return;
+        container.innerHTML = '';
+        guardians.forEach((guard, index) => {
+            const div = document.createElement('div');
+            div.style.display = 'flex';
+            div.style.alignItems = 'center';
+            div.style.gap = '0.5rem';
+            div.style.padding = '0.8rem';
+            div.style.borderBottom = '1px solid #ecf3fc';
+            div.innerHTML = `
+                <span style="flex:1;"><strong>${escapeHtml(guard.firstName)} ${escapeHtml(guard.lastName)}</strong><br><span style="font-size:0.65rem;">ID: ${guard.id}</span></span>
+                <button class="btn btn-outline edit-person" data-id="${guard.id}" style="padding:0.3rem 1rem;">✏️ Modifier</button>
+                <button class="btn btn-outline delete-person" data-id="${guard.id}" style="padding:0.3rem 1rem; background:#ffe0e0;">🗑️ Supprimer</button>
+            `;
+            container.appendChild(div);
+        });
+        document.querySelectorAll('.edit-person').forEach(btn => {
+            btn.addEventListener('click', () => editPerson(btn.getAttribute('data-id')));
+        });
+        document.querySelectorAll('.delete-person').forEach(btn => {
+            btn.addEventListener('click', () => deletePerson(btn.getAttribute('data-id')));
+        });
+    }
+
+    function editPerson(id) {
+        const guard = guardians.find(g => g.id === id);
+        if (!guard) return;
+        const newFirstName = prompt("Modifier le prénom:", guard.firstName);
+        if (newFirstName && newFirstName.trim()) guard.firstName = newFirstName.trim();
+        const newLastName = prompt("Modifier le nom:", guard.lastName);
+        if (newLastName && newLastName.trim()) guard.lastName = newLastName.trim();
+        saveToLocalStorage();
+        renderPersonsList();
+        renderPlanning();
+        renderStats();
+    }
+
+    function deletePerson(id) {
+        if (guardians.length <= 1) {
+            alert("Il doit rester au moins 1 gardien !");
+            return;
+        }
+        if (confirm("Supprimer ce gardien ?")) {
+            const index = guardians.findIndex(g => g.id === id);
+            if (index !== -1) guardians.splice(index, 1);
+            // Remplacer les assignations par le premier gardien
+            for (let key in planningData) {
+                for (let i in planningData[key]) {
+                    if (planningData[key][i]?.jour === id) planningData[key][i].jour = guardians[0]?.id || null;
+                    if (planningData[key][i]?.nuit === id) planningData[key][i].nuit = guardians[0]?.id || null;
+                }
+            }
+            saveToLocalStorage();
+            renderPersonsList();
+            renderPlanning();
+            renderStats();
+        }
+    }
+
+    function addPerson() {
+        const firstName = document.getElementById('newFirstName').value.trim();
+        const lastName = document.getElementById('newLastName').value.trim();
+        if (!firstName && !lastName) {
+            alert("Veuillez entrer au moins un prénom ou un nom");
+            return;
+        }
+        const newId = `g_${Date.now()}_${Math.random().toString(36).substr(2, 6)}`;
+        guardians.push({
+            id: newId,
+            firstName: firstName || "Prénom",
+            lastName: lastName || "Nom"
+        });
+        saveToLocalStorage();
+        renderPersonsList();
+        renderPlanning();
+        renderStats();
+        document.getElementById('newFirstName').value = '';
+        document.getElementById('newLastName').value = '';
+    }
+
+    // Export Excel
+    function exportToExcel() {
+        const monthNames = ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre'];
+        const month = getCurrentMonth();
+        const year = getCurrentYear();
+        const stats = calculateMonthlyStats();
+        let rows = [];
+        rows.push(["RAPPORT GARDIENS - SITES MODIFIABLES"]);
+        rows.push(["Date export:", new Date().toLocaleString()]);
+        rows.push(["Mois:", `${monthNames[month]} ${year}`]);
+        rows.push(["Nombre de gardiens:", guardians.length]);
+        rows.push(["Nombre de sites:", sites.length]);
+        rows.push([]);
+        rows.push(["PLANNING DU MOIS"]);
+        rows.push(["Site", "Poste JOUR", "Poste NUIT"]);
+        const planning = getCurrentPlanning();
+        for (let i = 0; i < sites.length; i++) {
+            const jourGuard = planning[i]?.jour ? guardians.find(g => g.id === planning[i].jour) : null;
+            const nuitGuard = planning[i]?.nuit ? guardians.find(g => g.id === planning[i].nuit) : null;
+            rows.push([sites[i], jourGuard ? `${jourGuard.firstName} ${jourGuard.lastName}` : "Non assigné", nuitGuard ? `${nuitGuard.firstName} ${nuitGuard.lastName}` : "Non assigné"]);
+        }
+        rows.push([]);
+        rows.push(["STATISTIQUES MENSUELLES - JOURS TRAVAILLÉS"]);
+        rows.push(["Gardien", "Poste JOUR", "Poste NUIT", "Total jours"]);
+        guardians.forEach(g => {
+            const stat = stats[g.id] || { jour: 0, nuit: 0, total: 0 };
+            rows.push([`${g.firstName} ${g.lastName}`, stat.jour, stat.nuit, stat.total]);
+        });
+        let csvContent = rows.map(row => row.map(cell => {
+            if (cell === undefined || cell === null) return "";
+            let val = String(cell);
+            val = val.replace(/"/g, '""');
+            if (val.includes(',') || val.includes('"') || val.includes('\n')) val = `"${val}"`;
+            return val;
+        }).join(",")).join("\n");
+        const blob = new Blob(["\uFEFF" + csvContent], { type: "application/vnd.ms-excel;charset=utf-8;" });
+        const link = document.createElement("a");
+        link.href = URL.createObjectURL(blob);
+        link.setAttribute("download", `gardiens_${monthNames[month]}_${year}.xls`);
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    }
+
+    function resetData() {
+        if (confirm("Réinitialiser toutes les données (sites, gardiens, planning) ?")) {
+            sites = [
+                "🏢 Site A - Accueil Principal", "🏭 Site B - Entrepôt Logistique",
+                "📋 Site C - Administration", "🚗 Site D - Parking Sécurisé",
+                "🔧 Site E - Technique & Maintenance", "📦 Site F - Zone de Stockage",
+                "🛡️ Site G - Centre de Sécurité"
+            ];
+            guardians = [
+                { id: "g1", firstName: "Jean", lastName: "Martin" }, { id: "g2", firstName: "Marie", lastName: "Bernard" },
+                { id: "g3", firstName: "Pierre", lastName: "Dubois" }, { id: "g4", firstName: "Sophie", lastName: "Thomas" },
+                { id: "g5", firstName: "Lucas", lastName: "Robert" }, { id: "g6", firstName: "Emma", lastName: "Richard" },
+                { id: "g7", firstName: "Thomas", lastName: "Petit" }, { id: "g8", firstName: "Julie", lastName: "Durand" },
+                { id: "g9", firstName: "Nicolas", lastName: "Leroy" }, { id: "g10", firstName: "Camille", lastName: "Moreau" },
+                { id: "g11", firstName: "Alexandre", lastName: "Simon" }, { id: "g12", firstName: "Laura", lastName: "Laurent" },
+                { id: "g13", firstName: "David", lastName: "Michel" }, { id: "g14", firstName: "Sarah", lastName: "Garcia" },
+                { id: "g15", firstName: "Kevin", lastName: "David" }, { id: "g16", firstName: "Amandine", lastName: "Bertrand" },
+                { id: "g17", firstName: "Julien", lastName: "Roux" }, { id: "g18", firstName: "Marine", lastName: "Vincent" },
+                { id: "g19", firstName: "Antoine", lastName: "Fournier" }, { id: "g20", firstName: "Claire", lastName: "Morel" },
+                { id: "g21", firstName: "Romain", lastName: "Girard" }, { id: "g22", firstName: "Élodie", lastName: "Andre" },
+                { id: "g23", firstName: "Vincent", lastName: "Mercier" }
+            ];
+            planningData = {};
+            saveToLocalStorage();
+            renderSitesList();
+            renderPersonsList();
+            renderPlanning();
+            renderStats();
+        }
+    }
+
+    function saveToLocalStorage() {
+        const data = { sites, guardians, planningData };
+        localStorage.setItem('gardiens_7sites_complet', JSON.stringify(data));
+    }
+
+    function loadFromLocalStorage() {
+        const raw = localStorage.getItem('gardiens_7sites_complet');
+        if (raw) {
+            try {
+                const data = JSON.parse(raw);
+                if (data.sites && data.sites.length) sites = data.sites;
+                if (data.guardians && data.guardians.length) guardians = data.guardians;
+                if (data.planningData) planningData = data.planningData;
+            } catch(e) { console.warn(e); }
+        }
+    }
+
+    // Onglets
+    function initTabs() {
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+                document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+                btn.classList.add('active');
+                document.getElementById(`tab-${btn.getAttribute('data-tab')}`).classList.add('active');
+                if (btn.getAttribute('data-tab') === 'sites') renderSitesList();
+                if (btn.getAttribute('data-tab') === 'persons') renderPersonsList();
+                if (btn.getAttribute('data-tab') === 'stats') renderStats();
+                if (btn.getAttribute('data-tab') === 'planning') renderPlanning();
+            });
+        });
+    }
+
+    function escapeHtml(str) {
+        if (!str) return "";
+        return str.replace(/[&<>]/g, function(m) {
+            if (m === '&') return '&amp;';
+            if (m === '<') return '&lt;';
+            if (m === '>') return '&gt;';
+            return m;
+        });
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        loadFromLocalStorage();
+        initTabs();
+        renderPlanning();
+        renderStats();
+        document.getElementById('monthSelect').addEventListener('change', () => {
+            renderPlanning();
+            renderStats();
+        });
+        document.getElementById('exportExcelBtn').addEventListener('click', exportToExcel);
+        document.getElementById('resetDataBtn').addEventListener('click', resetData);
+        document.getElementById('addSiteBtn').addEventListener('click', addSite);
+        document.getElementById('addPersonBtn').addEventListener('click', addPerson);
+        document.getElementById('yearDisplay').innerText = new Date().getFullYear();
+    });
+</script>
+</body>
+</html>

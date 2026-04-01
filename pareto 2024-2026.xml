@@ -1,0 +1,1168 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>win10</Author>
+  <LastAuthor>win10</LastAuthor>
+  <Created>2026-03-23T18:42:52Z</Created>
+  <LastSaved>2026-03-23T19:11:56Z</LastSaved>
+  <Version>16.00</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>3390</WindowHeight>
+  <WindowWidth>7470</WindowWidth>
+  <WindowTopX>0</WindowTopX>
+  <WindowTopY>0</WindowTopY>
+  <TabRatio>861</TabRatio>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="m2654806417856">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#DDDDDD"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000" ss:Bold="1"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s64">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#DDDDDD"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#DDDDDD"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#FFFFFF" ss:Bold="1"/>
+   <Interior ss:Color="#2E75B6" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s65">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#DDDDDD"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#DDDDDD"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#DDDDDD"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#FFFFFF" ss:Bold="1"/>
+   <Interior ss:Color="#2E75B6" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s66">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#DDDDDD"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#DDDDDD"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#FFFFFF" ss:Bold="1"/>
+   <Interior ss:Color="#2E75B6" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s67">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#DDDDDD"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#DDDDDD"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#DDDDDD"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s69">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#DDDDDD"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#DDDDDD"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#DDDDDD"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#DDDDDD"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s70">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#DDDDDD"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#DDDDDD"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#DDDDDD"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s72">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#DDDDDD"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#DDDDDD"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s74">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#DDDDDD"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#DDDDDD"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#DDDDDD"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s75">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#DDDDDD"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#DDDDDD"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s133">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#FFFFFF"/>
+   <Interior ss:Color="#2F75B5" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s134">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#FFFFFF" ss:Bold="1"/>
+   <Interior ss:Color="#2E75B6" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s138">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s139">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="Short Date"/>
+  </Style>
+  <Style ss:ID="s140">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000" ss:Bold="1"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s141">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s142">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="Short Date"/>
+  </Style>
+  <Style ss:ID="s143">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#DDDDDD"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#DDDDDD"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#DDDDDD"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000" ss:Bold="1"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s144">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#DDDDDD"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#DDDDDD"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#DDDDDD"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#DDDDDD"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000" ss:Bold="1"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s145">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#DDDDDD"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#DDDDDD"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#DDDDDD"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000" ss:Bold="1"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s152">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Interior ss:Color="#2F75B5" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s157">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#DDDDDD"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#DDDDDD"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000" ss:Bold="1"/>
+   <Interior ss:Color="#2E75B6" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s158">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#DDDDDD"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#DDDDDD"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#DDDDDD"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000" ss:Bold="1"/>
+   <Interior ss:Color="#2E75B6" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s159">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#DDDDDD"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#DDDDDD"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000" ss:Bold="1"/>
+   <Interior ss:Color="#2E75B6" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s222">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000" ss:Bold="1"/>
+   <Interior ss:Color="#2E75B6" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s242">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
+   <Interior ss:Color="#2F75B5" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s246">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="mmm\-yy"/>
+  </Style>
+  <Style ss:ID="s257">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Color="#000000" ss:Bold="1"/>
+   <Interior ss:Color="#2F75B5" ss:Pattern="Solid"/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="DONNEES_INCIDENTS ">
+  <Table ss:ExpandedColumnCount="7" ss:ExpandedRowCount="44" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultColumnWidth="60" ss:DefaultRowHeight="15">
+   <Column ss:Index="4" ss:AutoFitWidth="0" ss:Width="120.75"/>
+   <Column ss:AutoFitWidth="0" ss:Width="96.75"/>
+   <Column ss:AutoFitWidth="0" ss:Width="87"/>
+   <Row>
+    <Cell ss:MergeAcross="6" ss:StyleID="s257"><Data ss:Type="String">DONNEES_INCIDENTS </Data></Cell>
+   </Row>
+   <Row ss:Height="25.5">
+    <Cell ss:StyleID="s222"><Data ss:Type="String">ID</Data></Cell>
+    <Cell ss:StyleID="s222"><Data ss:Type="String">Date</Data></Cell>
+    <Cell ss:StyleID="s222"><Data ss:Type="String">Site</Data></Cell>
+    <Cell ss:StyleID="s222"><Data ss:Type="String">Incident</Data></Cell>
+    <Cell ss:StyleID="s222"><Data ss:Type="String">Causes Racine</Data></Cell>
+    <Cell ss:StyleID="s222"><Data ss:Type="String">Typologie</Data></Cell>
+    <Cell ss:StyleID="s222"><Data ss:Type="String">Gravité</Data></Cell>
+   </Row>
+   <Row ss:Height="38.25">
+    <Cell ss:StyleID="s138"><Data ss:Type="String">INC-001</Data></Cell>
+    <Cell ss:StyleID="s139"><Data ss:Type="DateTime">2024-01-02T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Main Office</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Chute femme ménage</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Politique HSE incomplète</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Management</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="Number">3</Data></Cell>
+   </Row>
+   <Row ss:Height="38.25">
+    <Cell ss:StyleID="s138"><Data ss:Type="String">INC-002</Data></Cell>
+    <Cell ss:StyleID="s139"><Data ss:Type="DateTime">2024-02-09T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Cercina</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Blessure clé à choc</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Processus achat sans contrôle</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Achats</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="Number">3</Data></Cell>
+   </Row>
+   <Row ss:Height="25.5">
+    <Cell ss:StyleID="s138"><Data ss:Type="String">INC-003</Data></Cell>
+    <Cell ss:StyleID="s139"><Data ss:Type="DateTime">2024-03-04T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Cercina</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Fermeture vanne gaz</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Absence coordination</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Organisation</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="Number">2</Data></Cell>
+   </Row>
+   <Row ss:Height="25.5">
+    <Cell ss:StyleID="s138"><Data ss:Type="String">INC-004</Data></Cell>
+    <Cell ss:StyleID="s139"><Data ss:Type="DateTime">2024-04-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">El Ain</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Câbles écrasés</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Défaut conception</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Technique</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="Number">2</Data></Cell>
+   </Row>
+   <Row ss:Height="51">
+    <Cell ss:StyleID="s138"><Data ss:Type="String">INC-005</Data></Cell>
+    <Cell ss:StyleID="s139"><Data ss:Type="DateTime">2024-04-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Guebiba</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Expansion thermique</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Absence gestion vieillissement</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Maintenance</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="Number">4</Data></Cell>
+   </Row>
+   <Row ss:Height="38.25">
+    <Cell ss:StyleID="s138"><Data ss:Type="String">INC-006</Data></Cell>
+    <Cell ss:StyleID="s139"><Data ss:Type="DateTime">2024-04-04T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">El Ain</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Blocage packer</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Absence capitalisation REX</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Organisation</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="Number">3</Data></Cell>
+   </Row>
+   <Row ss:Height="38.25">
+    <Cell ss:StyleID="s138"><Data ss:Type="String">INC-007</Data></Cell>
+    <Cell ss:StyleID="s139"><Data ss:Type="DateTime">2024-05-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Guebiba</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Évacuation médicale</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Absence programme médical</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Management</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="Number">2</Data></Cell>
+   </Row>
+   <Row ss:Height="38.25">
+    <Cell ss:StyleID="s138"><Data ss:Type="String">INC-008</Data></Cell>
+    <Cell ss:StyleID="s139"><Data ss:Type="DateTime">2024-05-07T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Tank Battery</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Fuite pig receiver</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Absence classification</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Maintenance</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="Number">2</Data></Cell>
+   </Row>
+   <Row ss:Height="38.25">
+    <Cell ss:StyleID="s138"><Data ss:Type="String">INC-009</Data></Cell>
+    <Cell ss:StyleID="s139"><Data ss:Type="DateTime">2024-05-19T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Guebiba</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Absence vigile</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Défaut contrat sécurité</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Management</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="Number">2</Data></Cell>
+   </Row>
+   <Row ss:Height="25.5">
+    <Cell ss:StyleID="s138"><Data ss:Type="String">INC-010</Data></Cell>
+    <Cell ss:StyleID="s139"><Data ss:Type="DateTime">2024-06-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Guebiba</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Fuite wellhead</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Absence monitoring</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Maintenance</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="Number">3</Data></Cell>
+   </Row>
+   <Row ss:Height="38.25">
+    <Cell ss:StyleID="s138"><Data ss:Type="String">INC-011</Data></Cell>
+    <Cell ss:StyleID="s139"><Data ss:Type="DateTime">2024-06-19T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Cercina</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Ancre sur pipeline</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Évaluation risques incomplète</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Management</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="Number">4</Data></Cell>
+   </Row>
+   <Row ss:Height="38.25">
+    <Cell ss:StyleID="s138"><Data ss:Type="String">INC-012</Data></Cell>
+    <Cell ss:StyleID="s139"><Data ss:Type="DateTime">2024-07-03T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Cercina</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Corrosion galvanique</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Absence veille technique</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Technique</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="Number">3</Data></Cell>
+   </Row>
+   <Row ss:Height="38.25">
+    <Cell ss:StyleID="s138"><Data ss:Type="String">INC-013</Data></Cell>
+    <Cell ss:StyleID="s139"><Data ss:Type="DateTime">2024-07-18T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Tank Battery</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Intrusion migrants</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Défaut maintenance</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Maintenance</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="Number">2</Data></Cell>
+   </Row>
+   <Row ss:Height="25.5">
+    <Cell ss:StyleID="s138"><Data ss:Type="String">INC-014</Data></Cell>
+    <Cell ss:StyleID="s139"><Data ss:Type="DateTime">2024-09-06T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Guebiba</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Collision portail</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Absence procédure</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Organisation</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="Number">2</Data></Cell>
+   </Row>
+   <Row ss:Height="25.5">
+    <Cell ss:StyleID="s138"><Data ss:Type="String">INC-015</Data></Cell>
+    <Cell ss:StyleID="s139"><Data ss:Type="DateTime">2024-10-11T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">El Ain</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Excavation SONEDE</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Absence cartographie</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Management</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="Number">3</Data></Cell>
+   </Row>
+   <Row ss:Height="25.5">
+    <Cell ss:StyleID="s138"><Data ss:Type="String">INC-016</Data></Cell>
+    <Cell ss:StyleID="s139"><Data ss:Type="DateTime">2024-10-13T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Cercina</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Bateau suspect</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Surveillance insuffisante</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Organisation</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="Number">2</Data></Cell>
+   </Row>
+   <Row ss:Height="38.25">
+    <Cell ss:StyleID="s138"><Data ss:Type="String">INC-017</Data></Cell>
+    <Cell ss:StyleID="s139"><Data ss:Type="DateTime">2024-11-08T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Guebiba</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Fuite citerne</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Absence référentiel fournisseur</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Achats</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="Number">2</Data></Cell>
+   </Row>
+   <Row ss:Height="38.25">
+    <Cell ss:StyleID="s138"><Data ss:Type="String">INC-018</Data></Cell>
+    <Cell ss:StyleID="s139"><Data ss:Type="DateTime">2024-12-03T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Guebiba</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Fuite citerne (récurrence)</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Absence suivi actions</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Management</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="Number">3</Data></Cell>
+   </Row>
+   <Row ss:Height="51">
+    <Cell ss:StyleID="s138"><Data ss:Type="String">INC-019</Data></Cell>
+    <Cell ss:StyleID="s139"><Data ss:Type="DateTime">2025-02-12T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Guebiba</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Incendie extérieur junkyard</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Absence procédure accès urgence</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Management</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="Number">3</Data></Cell>
+   </Row>
+   <Row ss:Height="51">
+    <Cell ss:StyleID="s138"><Data ss:Type="String">INC-020</Data></Cell>
+    <Cell ss:StyleID="s139"><Data ss:Type="DateTime">2025-03-17T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Tank Battery</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Attaque chien</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Absence contrôle chiens errants</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Management</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="Number">2</Data></Cell>
+   </Row>
+   <Row ss:Height="51">
+    <Cell ss:StyleID="s138"><Data ss:Type="String">INC-021</Data></Cell>
+    <Cell ss:StyleID="s139"><Data ss:Type="DateTime">2025-03-25T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Tank Battery</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Débordement eau pluviale</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Pompe défaillante + capacité drainage</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Maintenance</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="Number">2</Data></Cell>
+   </Row>
+   <Row ss:Height="38.25">
+    <Cell ss:StyleID="s138"><Data ss:Type="String">INC-022</Data></Cell>
+    <Cell ss:StyleID="s139"><Data ss:Type="DateTime">2025-03-16T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Cercina</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Immigrants clandestins</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Surveillance maritime insuffisante</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Organisation</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="Number">2</Data></Cell>
+   </Row>
+   <Row ss:Height="38.25">
+    <Cell ss:StyleID="s138"><Data ss:Type="String">INC-023</Data></Cell>
+    <Cell ss:StyleID="s139"><Data ss:Type="DateTime">2025-03-21T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">El Ain</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Excavation SONEDE</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Absence coordination avec tiers</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Management</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="Number">2</Data></Cell>
+   </Row>
+   <Row ss:Height="38.25">
+    <Cell ss:StyleID="s138"><Data ss:Type="String">INC-024</Data></Cell>
+    <Cell ss:StyleID="s246"><Data ss:Type="DateTime">2025-04-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Guebiba</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Grillage endommagé</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Défaut maintenance préventive</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Maintenance</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="Number">2</Data></Cell>
+   </Row>
+   <Row ss:Height="38.25">
+    <Cell ss:StyleID="s138"><Data ss:Type="String">INC-025</Data></Cell>
+    <Cell ss:StyleID="s246"><Data ss:Type="DateTime">2025-04-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Guebiba</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Relâchement gaz sans ignition</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Défaut procédure flare</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Management</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="Number">3</Data></Cell>
+   </Row>
+   <Row ss:Height="51">
+    <Cell ss:StyleID="s138"><Data ss:Type="String">INC-026</Data></Cell>
+    <Cell ss:StyleID="s139"><Data ss:Type="DateTime">2025-05-05T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Guebiba</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Brûlure citerne</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Corrosion + défaut équipement contractant</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Maintenance</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="Number">3</Data></Cell>
+   </Row>
+   <Row ss:Height="51">
+    <Cell ss:StyleID="s138"><Data ss:Type="String">INC-027</Data></Cell>
+    <Cell ss:StyleID="s139"><Data ss:Type="DateTime">2025-05-08T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Guebiba</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Gardien inconscient</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Absence contrôle médical contractant</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Management</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="Number">3</Data></Cell>
+   </Row>
+   <Row ss:Height="51">
+    <Cell ss:StyleID="s138"><Data ss:Type="String">INC-028</Data></Cell>
+    <Cell ss:StyleID="s246"><Data ss:Type="DateTime">2025-05-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Tank Battery</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Fuite spool SWDW</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Corrosion / Défaut maintenance</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Maintenance</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="Number">2</Data></Cell>
+   </Row>
+   <Row ss:Height="51">
+    <Cell ss:StyleID="s138"><Data ss:Type="String">INC-029</Data></Cell>
+    <Cell ss:StyleID="s139"><Data ss:Type="DateTime">2025-05-29T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Guebiba</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Fuite citerne #116201</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Corrosion + absence inspection contractant</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Maintenance</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="Number">3</Data></Cell>
+   </Row>
+   <Row ss:Height="51">
+    <Cell ss:StyleID="s138"><Data ss:Type="String">INC-030</Data></Cell>
+    <Cell ss:StyleID="s246"><Data ss:Type="DateTime">2025-06-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Tank Battery</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Fuite spool injection</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Corrosion / Défaut maintenance</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Maintenance</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="Number">2</Data></Cell>
+   </Row>
+   <Row ss:Height="38.25">
+    <Cell ss:StyleID="s138"><Data ss:Type="String">INC-031</Data></Cell>
+    <Cell ss:StyleID="s139"><Data ss:Type="DateTime">2025-07-15T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Guebiba</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Vol matériel</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Défaut sécurité périmétrique</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Organisation</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row ss:Height="51">
+    <Cell ss:StyleID="s138"><Data ss:Type="String">INC-032</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="Number">2025</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Offsite</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Incendie terrain voisin</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Absence prévention incendie tiers</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Management</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="Number">2</Data></Cell>
+   </Row>
+   <Row ss:Height="63.75">
+    <Cell ss:StyleID="s138"><Data ss:Type="String">INC-033</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="Number">2025</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Cercina</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Fuite cooling generator</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Usure équipement / Défaut maintenance</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Maintenance</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="Number">3</Data></Cell>
+   </Row>
+   <Row ss:Height="51">
+    <Cell ss:StyleID="s138"><Data ss:Type="String">INC-034</Data></Cell>
+    <Cell ss:StyleID="s139"><Data ss:Type="DateTime">2025-08-31T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Guebiba</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Fuite citerne #116201 (bis)</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Corrosion + absence inspection contractant</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Maintenance</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="Number">3</Data></Cell>
+   </Row>
+   <Row ss:Height="63.75">
+    <Cell ss:StyleID="s138"><Data ss:Type="String">INC-035</Data></Cell>
+    <Cell ss:StyleID="s139"><Data ss:Type="DateTime">2025-09-27T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Cercina</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Bouée dérivante</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Vieillissement équipement + absence inspection</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Maintenance</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row ss:Height="51">
+    <Cell ss:StyleID="s138"><Data ss:Type="String">INC-036</Data></Cell>
+    <Cell ss:StyleID="s139"><Data ss:Type="DateTime">2025-10-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Guebiba</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Fausse alarme H₂S</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Défaut capteur / Maintenance préventive</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Maintenance</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="Number">3</Data></Cell>
+   </Row>
+   <Row ss:Height="38.25">
+    <Cell ss:StyleID="s138"><Data ss:Type="String">INC-037</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="Number">2025</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Cercina</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Intrusion anciens chauffeurs</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Conflit social / Sécurité</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Organisation</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row ss:Height="38.25">
+    <Cell ss:StyleID="s138"><Data ss:Type="String">INC-038</Data></Cell>
+    <Cell ss:StyleID="s139"><Data ss:Type="DateTime">2025-10-08T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Tank Battery</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Fuite gaz toit tank</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Corrosion / Défaut inspection</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Maintenance</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="Number">3</Data></Cell>
+   </Row>
+   <Row ss:Height="51">
+    <Cell ss:StyleID="s138"><Data ss:Type="String">INC-039</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="Number">2025</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Cercina</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Fuite gaz generator</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Usure / Défaut maintenance</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Maintenance</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="Number">2</Data></Cell>
+   </Row>
+   <Row ss:Height="63.75">
+    <Cell ss:StyleID="s138"><Data ss:Type="String">INC-040</Data></Cell>
+    <Cell ss:StyleID="s139"><Data ss:Type="DateTime">2025-10-09T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Guebiba</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Rupture disque TD tank</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Défaut équipement / Maintenance</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Maintenance</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="Number">2</Data></Cell>
+   </Row>
+   <Row ss:Height="51">
+    <Cell ss:StyleID="s138"><Data ss:Type="String">INC-041</Data></Cell>
+    <Cell ss:StyleID="s139"><Data ss:Type="DateTime">2026-01-11T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">El Ain</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Fuite H₂S flange</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Corrosion / Défaut maintenance préventive</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Maintenance</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="Number">3</Data></Cell>
+   </Row>
+   <Row ss:Height="51">
+    <Cell ss:StyleID="s138"><Data ss:Type="String">INC-042</Data></Cell>
+    <Cell ss:StyleID="s139"><Data ss:Type="DateTime">2026-01-22T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Tank Battery</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Échafaudage bascule</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Erreur manœuvre / Absence procédure</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Organisation</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Selected/>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <RangeSelection>R1C1:R1C7</RangeSelection>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+ <Worksheet ss:Name="ANALYSE PARETO - CAUSES RACINES">
+  <Table ss:ExpandedColumnCount="6" ss:ExpandedRowCount="7" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultColumnWidth="60" ss:DefaultRowHeight="15">
+   <Column ss:Index="2" ss:AutoFitWidth="0" ss:Width="118.5"/>
+   <Column ss:AutoFitWidth="0" ss:Width="90"/>
+   <Row ss:Height="25.5">
+    <Cell ss:StyleID="s222"><Data ss:Type="String">Rang</Data></Cell>
+    <Cell ss:StyleID="s222"><Data ss:Type="String">Cause Racine</Data></Cell>
+    <Cell ss:StyleID="s222"><Data ss:Type="String">Typologie</Data></Cell>
+    <Cell ss:StyleID="s222"><Data ss:Type="String">Nombre</Data></Cell>
+    <Cell ss:StyleID="s222"><Data ss:Type="String">%</Data></Cell>
+    <Cell ss:StyleID="s222"><Data ss:Type="String">% Cumulé</Data></Cell>
+   </Row>
+   <Row ss:Height="51">
+    <Cell ss:StyleID="s138"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Corrosion / Défaut maintenance préventive</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Maintenance</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="Number">15</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">33.3%</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">33.3%</Data></Cell>
+   </Row>
+   <Row ss:Height="63.75">
+    <Cell ss:StyleID="s138"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Absence procédure / Management contractants</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Management</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">22.2%</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">55.6%</Data></Cell>
+   </Row>
+   <Row ss:Height="38.25">
+    <Cell ss:StyleID="s138"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Défaut sécurité / Organisation</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Organisation</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">17.8%</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">73.3%</Data></Cell>
+   </Row>
+   <Row ss:Height="38.25">
+    <Cell ss:StyleID="s138"><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Défaut technique / Conception</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Technique</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">11.1%</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">84.4%</Data></Cell>
+   </Row>
+   <Row ss:Height="51">
+    <Cell ss:StyleID="s138"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Absence contrôle contractants / Achats</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Achats</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">11.1%</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">95.6%</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="36">
+    <Cell ss:MergeAcross="5" ss:StyleID="s140"><Data ss:Type="String">SEUIL PARETO 80% : Les 3 premières causes représentent 73.3% des incidents</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>1</ActiveRow>
+     <ActiveCol>9</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+ <Worksheet ss:Name="ANALYSE PARETO PAR TYPOLOGIE">
+  <Table ss:ExpandedColumnCount="5" ss:ExpandedRowCount="8" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultColumnWidth="60" ss:DefaultRowHeight="15">
+   <Row>
+    <Cell ss:MergeAcross="4" ss:StyleID="s242"><Data ss:Type="String">ANALYSE PARETO PAR TYPOLOGIE</Data></Cell>
+   </Row>
+   <Row ss:Height="25.5">
+    <Cell ss:StyleID="s222"><Data ss:Type="String">Rang</Data></Cell>
+    <Cell ss:StyleID="s222"><Data ss:Type="String">Typologie</Data></Cell>
+    <Cell ss:StyleID="s222"><Data ss:Type="String">Nombre Incidents</Data></Cell>
+    <Cell ss:StyleID="s222"><Data ss:Type="String">%</Data></Cell>
+    <Cell ss:StyleID="s222"><Data ss:Type="String">% Cumulé</Data></Cell>
+   </Row>
+   <Row ss:Height="38.25">
+    <Cell ss:StyleID="s138"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Maintenance / Corrosion</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="Number">15</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">33.3%</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">33.3%</Data></Cell>
+   </Row>
+   <Row ss:Height="38.25">
+    <Cell ss:StyleID="s138"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Management / Procédure</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">22.2%</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">55.6%</Data></Cell>
+   </Row>
+   <Row ss:Height="25.5">
+    <Cell ss:StyleID="s138"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Organisation / Sécurité</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">17.8%</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">73.3%</Data></Cell>
+   </Row>
+   <Row ss:Height="25.5">
+    <Cell ss:StyleID="s138"><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Technique / Conception</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">11.1%</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">84.4%</Data></Cell>
+   </Row>
+   <Row ss:Height="38.25">
+    <Cell ss:StyleID="s138"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">Achats / Contractants</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">11.1%</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">95.6%</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="33.75">
+    <Cell ss:MergeAcross="4" ss:StyleID="s140"><Data ss:Type="String">CONCLUSION PARETO : Maintenance + Management = 55.6% des incidents</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>2</ActiveRow>
+     <ActiveCol>5</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+ <Worksheet ss:Name="ACTIONS PRIORITAIRES">
+  <Table ss:ExpandedColumnCount="6" ss:ExpandedRowCount="9" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultColumnWidth="60" ss:DefaultRowHeight="15">
+   <Column ss:Index="2" ss:AutoFitWidth="0" ss:Width="112.5"/>
+   <Column ss:AutoFitWidth="0" ss:Width="87"/>
+   <Column ss:AutoFitWidth="0" ss:Width="120"/>
+   <Column ss:AutoFitWidth="0" ss:Width="110.25"/>
+   <Row>
+    <Cell ss:MergeAcross="5" ss:StyleID="s133"><Data ss:Type="String">ACTIONS PRIORITAIRES</Data></Cell>
+   </Row>
+   <Row ss:Height="25.5">
+    <Cell ss:StyleID="s134"><Data ss:Type="String">Priorité</Data></Cell>
+    <Cell ss:StyleID="s134"><Data ss:Type="String">Cause Racine</Data></Cell>
+    <Cell ss:StyleID="s134"><Data ss:Type="String">Typologie</Data></Cell>
+    <Cell ss:StyleID="s134"><Data ss:Type="String">Action Corrective</Data></Cell>
+    <Cell ss:StyleID="s134"><Data ss:Type="String">Responsable</Data></Cell>
+    <Cell ss:StyleID="s134"><Data ss:Type="String">Échéance</Data></Cell>
+   </Row>
+   <Row ss:Height="51">
+    <Cell ss:StyleID="s140"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s141"><Data ss:Type="String">Corrosion / Défaut maintenance préventive</Data></Cell>
+    <Cell ss:StyleID="s141"><Data ss:Type="String">Maintenance</Data></Cell>
+    <Cell ss:StyleID="s141"><Data ss:Type="String">Programme CND systématique sur pipelines et équipements critiques</Data></Cell>
+    <Cell ss:StyleID="s141"><Data ss:Type="String">Responsable Maintenance</Data></Cell>
+    <Cell ss:StyleID="s142"><Data ss:Type="DateTime">2025-06-30T00:00:00.000</Data></Cell>
+   </Row>
+   <Row ss:Height="38.25">
+    <Cell ss:StyleID="s140"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s141"><Data ss:Type="String">Absence suivi actions (récurrence)</Data></Cell>
+    <Cell ss:StyleID="s141"><Data ss:Type="String">Management</Data></Cell>
+    <Cell ss:StyleID="s141"><Data ss:Type="String">Créer tableau de bord actions + revue mensuelle CODIR</Data></Cell>
+    <Cell ss:StyleID="s141"><Data ss:Type="String">Direction</Data></Cell>
+    <Cell ss:StyleID="s142"><Data ss:Type="DateTime">2025-04-15T00:00:00.000</Data></Cell>
+   </Row>
+   <Row ss:Height="63.75">
+    <Cell ss:StyleID="s140"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s141"><Data ss:Type="String">Fuites répétées citernes</Data></Cell>
+    <Cell ss:StyleID="s141"><Data ss:Type="String">Maintenance</Data></Cell>
+    <Cell ss:StyleID="s141"><Data ss:Type="String">Inspection tierce obligatoire des équipements contractants avant utilisation</Data></Cell>
+    <Cell ss:StyleID="s141"><Data ss:Type="String">Maintenance / Achats</Data></Cell>
+    <Cell ss:StyleID="s142"><Data ss:Type="DateTime">2025-04-30T00:00:00.000</Data></Cell>
+   </Row>
+   <Row ss:Height="102">
+    <Cell ss:StyleID="s141"><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s141"><Data ss:Type="String">Absence coordination avec tiers</Data></Cell>
+    <Cell ss:StyleID="s141"><Data ss:Type="String">Management</Data></Cell>
+    <Cell ss:StyleID="s141"><Data ss:Type="String">Convention formelle avec SONEDE, ONAS, STEG pour notification travaux</Data></Cell>
+    <Cell ss:StyleID="s141"><Data ss:Type="String">HSE / Affaires publiques</Data></Cell>
+    <Cell ss:StyleID="s142"><Data ss:Type="DateTime">2025-06-30T00:00:00.000</Data></Cell>
+   </Row>
+   <Row ss:Height="102">
+    <Cell ss:StyleID="s141"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s141"><Data ss:Type="String">Absence contrôle médical contractants</Data></Cell>
+    <Cell ss:StyleID="s141"><Data ss:Type="String">Management</Data></Cell>
+    <Cell ss:StyleID="s141"><Data ss:Type="String">SQM avec prestataires (Tiger, Alwaheb) pour renforcer contrôle médical</Data></Cell>
+    <Cell ss:StyleID="s141"><Data ss:Type="String">HSE / Achats</Data></Cell>
+    <Cell ss:StyleID="s142"><Data ss:Type="DateTime">2025-04-30T00:00:00.000</Data></Cell>
+   </Row>
+   <Row ss:Height="89.25">
+    <Cell ss:StyleID="s141"><Data ss:Type="Number">6</Data></Cell>
+    <Cell ss:StyleID="s141"><Data ss:Type="String">Vieillissement équipements</Data></Cell>
+    <Cell ss:StyleID="s141"><Data ss:Type="String">Maintenance</Data></Cell>
+    <Cell ss:StyleID="s141"><Data ss:Type="String">Plan de remplacement préventif (bouées, générateurs, disques rupture)</Data></Cell>
+    <Cell ss:StyleID="s141"><Data ss:Type="String">Maintenance</Data></Cell>
+    <Cell ss:StyleID="s142"><Data ss:Type="DateTime">2025-12-31T00:00:00.000</Data></Cell>
+   </Row>
+   <Row ss:Height="76.5">
+    <Cell ss:StyleID="s141"><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:StyleID="s141"><Data ss:Type="String">Défauts capteurs</Data></Cell>
+    <Cell ss:StyleID="s141"><Data ss:Type="String">Maintenance</Data></Cell>
+    <Cell ss:StyleID="s141"><Data ss:Type="String">Programme d'étalonnage préventif des détecteurs H₂S et gaz</Data></Cell>
+    <Cell ss:StyleID="s141"><Data ss:Type="String">Maintenance</Data></Cell>
+    <Cell ss:StyleID="s142"><Data ss:Type="DateTime">2025-06-30T00:00:00.000</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>4</ActiveRow>
+     <ActiveCol>7</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+ <Worksheet ss:Name="TABLEAU DE BORD">
+  <Table ss:ExpandedColumnCount="3" ss:ExpandedRowCount="9" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultColumnWidth="60" ss:DefaultRowHeight="15">
+   <Column ss:AutoFitWidth="0" ss:Width="123.75"/>
+   <Column ss:Index="3" ss:AutoFitWidth="0" ss:Width="138"/>
+   <Row>
+    <Cell ss:MergeAcross="2" ss:StyleID="s152"><Data ss:Type="String">TABLEAU DE BORD PARETO </Data></Cell>
+   </Row>
+   <Row ss:Height="15.75">
+    <Cell ss:StyleID="s157"><Data ss:Type="String">Indicateur</Data></Cell>
+    <Cell ss:StyleID="s158"><Data ss:Type="String">Valeur</Data></Cell>
+    <Cell ss:StyleID="s159"><Data ss:Type="String">Interprétation</Data></Cell>
+   </Row>
+   <Row ss:Height="39">
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Total incidents analysés</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">45</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">Janvier 2024 - Février 2026</Data></Cell>
+   </Row>
+   <Row ss:Height="51.75">
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Incidents Maintenance / Corrosion</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">15</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">33.3% des incidents</Data></Cell>
+   </Row>
+   <Row ss:Height="51.75">
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Incidents Management / Procédure</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">22.2% des incidents</Data></Cell>
+   </Row>
+   <Row ss:Height="64.5">
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Incidents Maintenance + Management</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">25</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">55.6% des incidents</Data></Cell>
+   </Row>
+   <Row ss:Height="64.5">
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Nombre de causes pour atteindre 80%</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">Maintenance + Management + Organisation</Data></Cell>
+   </Row>
+   <Row ss:Height="90">
+    <Cell ss:StyleID="s143"><Data ss:Type="String">Pareto : Maintenance + Management + Organisation</Data></Cell>
+    <Cell ss:StyleID="s144"><Data ss:Type="String">73.3%</Data></Cell>
+    <Cell ss:StyleID="s145"><Data ss:Type="String">60% des typologies = 73% des incidents</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="80.25">
+    <Cell ss:MergeAcross="2" ss:StyleID="m2654806417856"><Data ss:Type="String"> CONCLUSION : Concentrer les actions sur MAINTENANCE (15 incidents), MANAGEMENT (10 incidents) et ORGANISATION (8 incidents)</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>4</ActiveRow>
+     <ActiveCol>10</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+ <Worksheet ss:Name="donner pareto">
+  <Table ss:ExpandedColumnCount="3" ss:ExpandedRowCount="8" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultColumnWidth="60" ss:DefaultRowHeight="15">
+   <Row>
+    <Cell><Data ss:Type="String">DONNEES POUR GRAPHIQUE PARETO </Data></Cell>
+   </Row>
+   <Row ss:Index="3" ss:Height="26.25">
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Typologie</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Nombre Incidents</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">% Cumulé</Data></Cell>
+   </Row>
+   <Row ss:Height="39">
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Maintenance / Corrosion</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">15</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">33.3%</Data></Cell>
+   </Row>
+   <Row ss:Height="39">
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Management / Procédure</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">55.6%</Data></Cell>
+   </Row>
+   <Row ss:Height="26.25">
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Organisation / Sécurité</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">73.3%</Data></Cell>
+   </Row>
+   <Row ss:Height="26.25">
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Technique / Conception</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">84.4%</Data></Cell>
+   </Row>
+   <Row ss:Height="38.25">
+    <Cell ss:StyleID="s72"><Data ss:Type="String">Achats / Contractants</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">95.6%</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>8</ActiveRow>
+     <ActiveCol>4</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>
